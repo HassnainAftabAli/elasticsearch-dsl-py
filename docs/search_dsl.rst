@@ -25,7 +25,7 @@ The ``Search`` object represents the entire search request:
 
 The API is designed to be chainable. With the exception of the
 aggregations functionality this means that the ``Search`` object is immutable -
-all changes to the object will result in a shallow copy being created which
+all changes to the object will result in a deep copy being created which
 contains the changes. This means you can safely pass the ``Search`` object to
 foreign code without fear of it modifying your objects as long as it sticks to
 the ``Search`` object APIs.
